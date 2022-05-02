@@ -4,6 +4,6 @@ names = ['matplotlib','numpy','sympy','scipy','pandas']
 for name in names:
     try:
         exec("import "+name)
-        exec(f"print('{name} '+{name}.__version__)")
+        print('{name}',"found")
     except:
-        print(f"{name} NOT found") 
+        print("{0} NOT found".format(name)) 
